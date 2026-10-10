@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-memo-analyzer"
+version = "1.0.0"
+description = "Audio transcript parser, action item extractor and Markdown meeting summarizer"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Afzalbek", email = "afzalbek-dev@users.noreply.github.com"}]
+
+[project.scripts]
+voice-memo = "voice_memo.cli:main"
